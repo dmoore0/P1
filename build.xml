@@ -1,0 +1,11 @@
+<project name = "P1 CS 371" basedir = "." default = "compiling">
+	<target name = "cleanup">
+		<delete file = "WebWorker.class"/>
+		<delete file = "Webserver.class"/>
+	</target>
+	<target name = "compiling">
+		<javac srcdir = "." destdir = ".">
+			<include name = "*.java"/>
+		</javac>
+	</target>
+</project>
